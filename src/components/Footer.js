@@ -62,8 +62,8 @@ const Footer = () => {
   const classes = useStyles();
   return (
     <>
-      <div className="bg-secondary bottom-0 px-32 mt-20 text-white">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
+      <div className="hidden lg:block bg-secondary bottom-0 px-32 mt-20 text-white">
+        <div className="grid grid-cols-2 gap-4 ">
           <div className="w-96 ">
             <img src={footer} alt="footer" style={{marginTop: "-40px"}}/>
           </div>
@@ -99,7 +99,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 pt-10">
+        <div className="grid grid-cols-5 gap-4 pt-10">
             <div>
                 <h4>Company</h4>
                 <ul>
