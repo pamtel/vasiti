@@ -6,10 +6,12 @@ module.exports = {
       backgroundColor: {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        tetiary: "var(--tetiary)",
       },
       colors: {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        tetiary: "var(--tetiary)",
       },
     },
   },
