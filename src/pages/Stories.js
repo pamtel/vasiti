@@ -10,6 +10,8 @@ import Button from "@material-ui/core/Button";
 import { deepOrange } from "@material-ui/core/colors";
 import { DataContext } from "../components/DataProvider";
 import validate from "../components/Validate";
+import { useHistory } from "react-router";
+
 
 
 const ColorButton = withStyles((theme) => ({
@@ -48,6 +50,7 @@ const initialState = {
 
 const Stories = () => {
   const classes = useStyles();
+  const history = useHistory();
 
   const [people, setPeople] = useContext(DataContext);
 
@@ -69,7 +72,7 @@ const Stories = () => {
       setPerson(initialState);
       setErrorMsg(initialState);
       document.getElementById("clearInput").reset();
-     
+      history.push("/thanks");
     }
   };
 
